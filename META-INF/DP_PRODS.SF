@@ -1,0 +1,39 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: +fBgN3lT0kUtT1q3MLgY1JiDzUt2T
+ jzprllm5cW/LuM=
+SHA-256-Digest-Manifest: cSucdgUFCg+7r3CSveIyK25I5UU4FDCrJqMMuoOF0b0=
+Created-By: 1.8.0_312 (Private Build)
+
+Name: Dockerfile
+SHA-256-Digest: evLm93OUxIcA89RWA3LBmN+NN3lXOIqWZ7tStaZvonY=
+
+Name: asset/download.ps1
+SHA-256-Digest: RhrkitRmrMEODGq1fYkmQjcZaXiu7YuNF0FUt8pZOkY=
+
+Name: asset/pre_stop.ps1
+SHA-256-Digest: SvqRMHhFOj2MkmeeGEVBcLcFiiis5xkQZedjBd5vpT8=
+
+Name: asset/post_start.ps1
+SHA-256-Digest: 12eecZluSCdFmOJJih6/+e3A5Y+1ToS5bjBCOI8c0EQ=
+
+Name: ServiceNow Open Source Disclosure - MID Server.pdf
+SHA-256-Digest: ehPsm7kOdw0MnuM7ckYgYYOjKTE46DnPz7wodxzgtzY=
+
+Name: .env
+SHA-256-Digest: P8ndFnGTjEIOLz6NkAEtn3N6h6Ho5RUX8rZMl7WQkhg=
+
+Name: asset/.container
+SHA-256-Digest: 0x/H6EyG3OfGBQbwSytyX5cJsMlO2Q+7+fKVC2b5Z10=
+
+Name: EULA - MID Server.pdf
+SHA-256-Digest: lRA4HwdGabx2xqZ7Ligph6mdtkSMxugPibR4AmmmB0Y=
+
+Name: asset/init.ps1
+SHA-256-Digest: t6ZSAW5y9cYwWGKIrYA4ayJWtMiuPJY6CBXAmxZt6Lw=
+
+Name: asset/healthcheck.ps1
+SHA-256-Digest: Q+SHHaqbZ0Uh5pQhFH+HPFl5EhCutwVqLKBgDAA7N0Q=
+
+Name: asset/install.ps1
+SHA-256-Digest: Q6DKXkpXvfaMD9tQ74Lh6ew1MKq3HtGUD/0dVM7qmU8=
+

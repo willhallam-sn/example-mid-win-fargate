@@ -1,0 +1,21 @@
+#
+trigger:
+- main
+pool:
+    vmImage: 'windows-2019' # set to windows-latest or another Windows vmImage for Windows builds
+
+variables:
+- group: docker-vars
+- name: imageName
+  value: 'mid-win-fargate'
+steps:
+    #echo Logging in to ACR
+    #echo $(AZURE_SP_SECRET) | docker --debug login $(ACR_REGISTRY) --username $(AZURE_SP_ID) --password-stdin 
+- script: |
+    echo Logging in to Docker Hub...
+    docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
+    echo Building the Docker image...
+    docker build -t $(imageName):latest .
+    docker tag $(imageName):latest $(DOCKER_USER)/$(imageName):latest
+    echo Pushing the Docker image...
+    docker push $(DOCKER_USER)/$(imageName):latest
