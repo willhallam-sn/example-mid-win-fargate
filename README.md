@@ -12,13 +12,13 @@ In order to run this container in AWS Fargate, the following are required:
 - ECS Cluster designated for Fargate launch type/capacity provider
 - AWS directory
 - A mid server service account created in the above directory
-- FsX for Windows filesystem tied to aforementioned AWS directory, owned by the mid server service account
+- FSx for Windows filesystem tied to aforementioned AWS directory, owned by the mid server service account
 - AWS secrets which store the following:
     1. MID user name on SN instance
     2. MID user password on SN instance
     3. MID instance URL
-    4. Drive letter to use for FsX filesystem
-    5. Path to FsX filesystem in UNC format
+    4. Drive letter to use for FSx filesystem
+    5. Path to FSx filesystem in UNC format
     6. User name from AWS directory for the mid server service account
     7. User password from AWS directory for the mid server service account
 - ECS task definition which launches this image with the following environment variables defined:
@@ -40,4 +40,4 @@ Then create an ADO pipeline using the included azure-pipelines.yml file.
 
 ## Invocation
 
-With the prerequisites set up, launching this container image via a Fargate task should produce a serverless Windows MID.  Mounting the FsX filesystem to a separate system will allow access to the full "agent" folder for monitoring, debugging, and further development.
+With the prerequisites set up, launching this container image via a Fargate task should produce a serverless Windows MID.  Mounting the FSx filesystem to a separate system will allow access to the full "agent" folder for monitoring, debugging, and further development.
